@@ -1,0 +1,14 @@
+#Courtney Gray
+#CSC522 Homework 2
+
+#The following R code generates 1000 random values from an exponential distribution with a rate (lambda) = 0.6
+
+set.seed(123) #allows numbers to be reproduced
+values <- rexp(n = 1000, rate = 0.6)
+
+#Plot a histogram of the exponential distribution
+hist(values, freq = FALSE, main = "Exponential Distribution", xlab = "Values", ylab = "Density")
+
+#Plot the density curve
+curve(dexp(x, rate = 0.6), add = TRUE, col = "blue", lwd = 3)
+
